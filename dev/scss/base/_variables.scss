@@ -1,0 +1,78 @@
+$breakpoints: (
+  "xs-phone": 480px,
+  "phone": 768px,
+  "tablet": 1024px,
+  "desktop": 1200px,
+  "desktop-lg": 1440px,
+  "widescreen": 1800px
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)"
+);
+
+// ligatured operators ≥ ≤
+
+// Colors
+$white: #fff;
+$black: #000;
+$gray: #ddd;
+$red: #ff4f44;
+$green: #28a745;
+
+// Fonts
+$base-font-sans-serif: "Montserrat", "Arial", "Helvetica Neue", "Helvetica", sans-serif !default;
+$base-font-serif: "Times New Roman", "Times", "Baskerville", "Georgia", serif !default;
+
+// Body
+$base-text-color: $black !default;
+$base-background-color: $gray !default;
+$font-size-base: 20px !default;
+$font-weight-base: 400 !default;
+$line-height-base: 1.5 !default;
+$base-font-family: $base-font-sans-serif !default;
+$base-min-width: 320px !default;
+
+// Container
+$base-max-width: 1570px !default;
+
+// Liks
+$base-link-color: $red !default;
+$base-link-hover-color: $black !default;
+
+// Buttons
+$btn-color: $white !default;
+$btn-background: $red !default;
+$btn-border: 2px solid $red !default;
+$btn-border-radius: 5px !default;
+$btn-padding: 20px 10px 18px !default;
+$btn-font-size: 18px !default;
+$btn-font-weight: 700 !default;
+$btn-line-height: 1 !default;
+
+// Forms
+$form-element-padding: 10px 15px !default;
+$form-element-border-color: $black !default;
+$form-element-focus-border-color: $gray !default;
+$form-element-font-size: 18px !default;
+$form-element-line-height: 1 !default;
+$form-element-font-weight: 700 !default;
+$placeholder-color: $black !default;
+$placeholder-hover-color: $gray !default;
+
+// Headers
+$h1-font-size: 100px !default;
+$h2-font-size: 48px !default;
+$h3-font-size: 30px !default;
+$h4-font-size: 24px !default;
+$h5-font-size: 22px !default;
+$h6-font-size: 18px !default;
+$headings-font-family: $base-font-sans-serif !default;
+$headings-color: $black !default;

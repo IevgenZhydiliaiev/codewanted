@@ -1,0 +1,52 @@
+/* scroll button styles */
+
+a.scroll-btn {
+  color: $red;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+
+  @include media("<desktop") {
+    bottom: 25px;
+  }
+
+  @include media("<tablet") {
+    bottom: 20px;
+  }
+
+  @include media("<phone") {
+    bottom: 15px;
+  }
+
+  .scroll-btn-text {
+    display: block;
+    margin: 0 0 5px;
+  }
+
+  &:hover,
+  &:focus {
+    .no-touch-device & {
+      color: $black;
+    }
+  }
+
+  [class^="icon-"],
+  [class*="icon-"] {
+    font-size: 40px;
+
+    @include media("<desktop") {
+      font-size: 35px;
+    }
+
+    @include media("<tablet") {
+      font-size: 30px;
+    }
+  }
+}

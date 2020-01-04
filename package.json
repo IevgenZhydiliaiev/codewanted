@@ -1,0 +1,31 @@
+{
+  "name": "Gulp_Build",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "npm i && gulp watch",
+    "dist": "gulp dist",
+    "update": "npm up"
+  },
+  "author": "IevgenZhydiliaiev",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "autoprefixer": "^9.5.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "imagemin-pngquant": "^6.0.0"
+  },
+  "dependencies": {
+    "npm": "^6.8.0"
+  }
+}

@@ -1,0 +1,130 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: $headings-font-family;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: $headings-color;
+
+  @include media("<desktop") {
+    margin: 0 0 10px;
+  }
+
+  &:last-child {
+    margin: 0;
+
+    @include media("<desktop") {
+      margin: 0;
+    }
+  }
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+
+  @include media("<widescreen") {
+    font-size: 88px;
+  }
+
+  @include media("<desktop-lg") {
+    font-size: 75px;
+  }
+
+  @include media("<desktop") {
+    font-size: 62px;
+  }
+
+  @include media("<tablet") {
+    font-size: 50px;
+  }
+
+  @include media("<phone") {
+    font-size: 40px;
+  }
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+
+  @include media("<widescreen") {
+    font-size: 45px;
+  }
+
+  @include media("<desktop") {
+    font-size: 40px;
+  }
+
+  @include media("<tablet") {
+    font-size: 30px;
+  }
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+  color: $red;
+
+  @include media("<desktop") {
+    font-size: 26px;
+  }
+
+  @include media("<tablet") {
+    font-size: 24px;
+  }
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+
+  @include media("<desktop") {
+    font-size: 20px;
+  }
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+
+  @include media("<desktop") {
+    font-size: 16px;
+  }
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+
+  @include media("<desktop") {
+    font-size: 14px;
+  }
+}
+
+p {
+  margin: 0 0 20px;
+
+  @include media("<desktop") {
+    margin: 0 0 10px;
+  }
+
+  &:last-child {
+    margin: 0;
+
+    @include media("<desktop") {
+      margin: 0;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $base-link-color;
+  outline: none;
+  @include animate(color, .3s, ease-in-out);
+
+  &:hover,
+  &:focus {
+    color: $base-link-hover-color;
+  }
+}

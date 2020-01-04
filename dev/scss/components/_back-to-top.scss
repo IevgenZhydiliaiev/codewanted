@@ -1,0 +1,44 @@
+/* back to top styles */
+
+a.back-to-top {
+  @include size(60px);
+  color: $red;
+  border: 2px solid $red;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 100%;
+  right: 25px;
+  margin: 0 0 25px;
+  @include animate(border-color color, .3s, ease-in-out);
+
+  @include media("<widescreen") {
+    right: 20px;
+    margin: 0 0 20px;
+  }
+
+  @include media("<desktop") {
+    @include size(50px);
+  }
+
+  @include media("<tablet") {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    .no-touch-device & {
+      border-color: $black;
+      color: $black;
+    }
+  }
+
+  [class^="icon-"],
+  [class*="icon-"] {
+    @include vertical-align-el;
+    font-size: 25px;
+
+    @include media("<desktop") {
+      font-size: 20px;
+    }
+  }
+}

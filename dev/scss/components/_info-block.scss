@@ -1,0 +1,134 @@
+/* info block styles */
+
+.info-block {
+  display: flex;
+  flex-wrap: wrap;
+  background: $white;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 18px 2px rgba($black, .1);
+
+  @include media("<phone") {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+
+    @include media("<phone") {
+      flex-direction: column;
+    }
+  }
+
+  .info-block-img {
+    flex: 0 0 44%;
+    max-width: 44%;
+    position: relative;
+    padding-bottom: 40%;
+    overflow: hidden;
+
+    @include media("<tablet") {
+      padding-bottom: 51%;
+    }
+
+    @include media("<phone") {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-bottom: 100%;
+      border-radius: 5px;
+    }
+
+    img {
+      @include vertical-align-el;
+      @include size(100%);
+    }
+  }
+
+  .info-block-text {
+    flex: 0 0 56%;
+    max-width: 56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 65px;
+
+    @include media("<widescreen") {
+      padding: 50px;
+    }
+
+    @include media("<desktop-lg") {
+      padding: 40px;
+    }
+
+    @include media("<desktop") {
+      padding: 30px;
+    }
+
+    @include media("<tablet") {
+      padding: 20px;
+    }
+
+    @include media("<phone") {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  h3 {
+    margin: 0 0 20px;
+
+    @include media("<desktop") {
+      margin: 0 0 15px;
+    }
+
+    @include media("<phone") {
+      margin: 0 0 10px;
+    }
+  }
+  
+  ul {
+    @extend %listreset;
+    color: $black;
+
+    li {
+      position: relative;
+      padding: 0 0 0 20px;
+
+      @include media("<desktop") {
+        padding: 0 0 0 15px;
+      }
+
+      @include media("<tablet") {
+        padding: 0 0 0 10px;
+      }
+
+      &:not(:last-child) {
+        margin: 0 0 10px;
+
+        @include media("<tablet") {
+          margin: 0 0 5px;
+        }
+      }
+
+      &:before {
+        content: '';
+        @include size(5px);
+        border-radius: 50%;
+        background: $red;
+        position: absolute;
+        top: 11px;
+        left: 0;
+
+        @include media("<desktop") {
+          top: 9px;
+        }
+
+        @include media("<tablet") {
+          @include size(4px);
+          top: 8px;
+        }
+      }
+    }
+  }
+}

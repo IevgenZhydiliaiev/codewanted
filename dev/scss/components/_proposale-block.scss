@@ -1,0 +1,119 @@
+/* proposale block styles */
+
+.proposale-block {
+  max-width: 700px;
+
+  @include media("<widescreen") {
+    max-width: 615px;
+  }
+
+  @include media("<desktop-lg") {
+    max-width: 530px;
+  }
+
+  @include media("<desktop") {
+    max-width: 425px;
+  }
+
+  @include media("<tablet") {
+    max-width: 350px;
+  }
+
+  @include media("<phone") {
+    max-width: none;
+  }
+
+  h1 {
+    font-weight: 800;
+    line-height: 112px;
+    text-transform: uppercase;
+
+    @include media("<widescreen") {
+      line-height: 100px;
+    }
+
+    @include media("<desktop-lg") {
+      line-height: 87px;
+    }
+
+    @include media("<desktop") {
+      line-height: 74px;
+    }
+
+    @include media("<tablet") {
+      line-height: 62px;
+    }
+
+    @include media("<phone") {
+      line-height: 52px;
+    }
+
+    > mark {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 1.2;
+      display: block;
+      text-transform: none;
+      color: $red;
+      background: transparent;
+
+      @include media("<widescreen") {
+        font-size: 28px;
+      }
+
+      @include media("<desktop-lg") {
+        font-size: 26px;
+      }
+
+      @include media("<desktop") {
+        font-size: 24px;
+      }
+
+      @include media("<tablet") {
+        font-size: 22px;
+      }
+
+      @include media("<phone") {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .decor-block {
+    padding: 0 0 30px;
+    margin: 0 0 40px;
+
+    @include media("<widescreen") {
+      padding: 0 0 25px;
+      margin: 0 0 35px;
+    }
+
+    @include media("<desktop-lg") {
+      padding: 0 0 20px;
+      margin: 0 0 25px;
+    }
+
+    @include media("<desktop") {
+      padding: 0 0 15px;
+      margin: 0 0 20px;
+    }
+
+    @include media("<phone") {
+      padding: 0 0 10px;
+      margin: 0 0 15px;
+    }
+
+    &:after {
+      width: 100px;
+
+      @include media("<phone") {
+        @include size(60px, 1px);
+      }
+    }
+  }
+
+  .title {
+    display: block;
+    font-weight: 400;
+  }
+}

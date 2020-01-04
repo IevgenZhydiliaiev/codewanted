@@ -1,0 +1,286 @@
+/* container styles */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: $base-max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* background section styles */
+
+.bg-section {
+  position: relative;
+
+  &:after {
+    @include size(944px, 403px);
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-image: url(../images/bg-decor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    @include media("<widescreen") {
+      @include size(786px, 335px);
+    }
+
+    @include media("<desktop-lg") {
+      @include size(630px, 268px);
+    }
+
+    @include media("<desktop") {
+      @include size(555px, 237px);
+    }
+
+    @include media("<tablet") {
+      @include size(378px, 160px);
+    }
+
+    @include media("<phone") {
+      display: none;
+    }
+  }
+}
+
+/* primary title styles */
+
+.primary-title {
+  margin: 0 0 65px;
+
+  @include media("<widescreen") {
+    margin: 0 0 55px;
+  }
+
+  @include media("<desktop-lg") {
+    margin: 0 0 45px;
+  }
+
+  @include media("<desktop") {
+    margin: 0 0 34px;
+  }
+
+  @include media("<tablet") {
+    margin: 0 0 30px;
+  }
+
+  @include media("<phone") {
+    margin: 0 0 20px;
+  }
+}
+
+/* sub title styles */
+
+.sub-title {
+  font-size: 140px;
+  line-height: 1.2;
+  position: absolute;
+  z-index: -1;
+  top: -12px;
+  left: 45px;
+  text-transform: uppercase;
+  color: rgba($red, .15);
+
+  @include media("<widescreen") {
+    font-size: 125px;
+  }
+
+  @include media("<desktop-lg") {
+    font-size: 100px;
+    top: 5px;
+  }
+
+  @include media("<desktop") {
+    font-size: 80px;
+  }
+
+  @include media("<tablet") {
+    font-size: 65px;
+    left: 35px;
+  }
+
+  @include media("<phone") {
+    display: none;
+  }
+}
+
+/* decor block styles */
+
+.decor-block {
+  position: relative;
+  padding: 0 0 40px;
+
+  @include media("<widescreen") {
+    padding: 0 0 30px;
+  }
+
+  @include media("<desktop-lg") {
+    padding: 0 0 20px;
+  }
+
+  @include media("<desktop") {
+    padding: 0 0 15px;
+  }
+
+  &:after {
+    @include size(60px, 2px);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $red;
+
+    @include media("<phone") {
+      @include size(60px, 1px);
+    }
+  }
+}
+
+/* section styles */
+
+.section-0 {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  @include media("<desktop") {
+    padding: 102px 0;
+  }
+
+  @include media("<tablet") {
+    padding: 92px 0;
+  }
+
+  @include media("<phone") {
+    padding: 80px 0;
+  }
+}
+
+/* section styles */
+
+.section-1 {
+  padding: 65px 0;
+
+  @include media("<widescreen") {
+    padding: 50px 0;
+  }
+
+  @include media("<desktop-lg") {
+    padding: 40px 0;
+  }
+
+  @include media("<desktop") {
+    padding: 30px 0;
+  }
+
+  @include media("<tablet") {
+    padding: 20px 0;
+  }
+}
+
+/* section styles */
+
+.section-2 {
+  padding: 65px 0;
+
+  @include media("<widescreen") {
+    padding: 50px 0;
+  }
+
+  @include media("<desktop-lg") {
+    padding: 40px 0;
+  }
+
+  @include media("<desktop") {
+    padding: 30px 0;
+  }
+
+  @include media("<tablet") {
+    padding: 20px 0;
+  }
+}
+
+/* section styles */
+
+.section-3 {
+  padding: 65px 0;
+
+  @include media("<widescreen") {
+    padding: 50px 0;
+  }
+
+  @include media("<desktop-lg") {
+    padding: 40px 0;
+  }
+
+  @include media("<desktop") {
+    padding: 30px 0;
+  }
+
+  @include media("<tablet") {
+    padding: 20px 0;
+  }
+}
+
+/* section styles */
+
+.section-4 {
+  padding: 65px 0;
+
+  @include media("<widescreen") {
+    padding: 50px 0;
+  }
+
+  @include media("<desktop-lg") {
+    padding: 40px 0;
+  }
+
+  @include media("<desktop") {
+    padding: 30px 0;
+  }
+
+  @include media("<tablet") {
+    padding: 20px 0;
+  }
+
+  .primary-title {
+    @include media("<phone") {
+      margin: 0;
+    }
+  }
+}
+
+/* section styles */
+
+.section-5 {
+  padding: 65px 0;
+
+  @include media("<widescreen") {
+    padding: 50px 0;
+  }
+
+  @include media("<desktop-lg") {
+    padding: 40px 0;
+  }
+
+  @include media("<desktop") {
+    padding: 30px 0;
+  }
+
+  @include media("<tablet") {
+   padding: 20px 0;
+  }
+
+  &:after {
+    @include media("<desktop") {
+      display: none;
+    }
+  }
+}

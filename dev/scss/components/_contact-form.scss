@@ -1,0 +1,200 @@
+/* contact form styles */
+
+.contact-form {
+  .contact-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    @include media("<widescreen") {
+      margin: 0 -10px;
+    }
+
+    @include media("<desktop") {
+      margin: 0 -10px;
+    }
+
+    @include media("<phone") {
+      margin: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+
+      @include media("<widescreen") {
+        margin-bottom: 30px;
+      }
+
+      @include media("<desktop-lg") {
+        margin-bottom: 20px;
+      }
+
+      @include media("<desktop") {
+        margin-bottom: 15px;
+      }
+    }
+
+    &.contact-form-row-button {
+      margin-bottom: 0;
+
+      @include media("<widescreen") {
+        margin-bottom: 0;
+      }
+
+      @include media("<desktop-lg") {
+        margin-bottom: 0;
+      }
+
+      @include media("<desktop") {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .contact-form-col {
+    padding: 0 15px;
+    width: (100% / 2);
+
+    @include media("<widescreen") {
+      padding: 0 10px;
+    }
+
+    @include media("<desktop") {
+      padding: 0 10px;
+    }
+
+    @include media("<phone") {
+      width: 100%;
+      padding: 0;
+    }
+
+    &:only-child {
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      @include media("<phone") {
+        padding: 0 0 20px;
+      }
+    }
+  }
+
+  h3 {
+    margin: 0 0 20px;
+
+    @include media("<desktop") {
+      margin: 0 0 15px;
+    }
+  }
+
+  .contact-form-box {
+    position: relative;
+
+    &.active {
+      label {
+        color: $gray;
+        transform: translateY(-14px) scale(.8);
+        transform-origin: 0 0;
+      }
+
+      input,
+      textarea {
+        border-color: $form-element-focus-border-color;
+      }
+    }
+  }
+
+  .wpcf7-form-control-wrap {
+    display: block;
+    z-index: 1;
+  }
+
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* autoprefixer: ignore next */
+    transform: translateY(7px);
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: $black;
+    cursor: text;
+    z-index: 2;
+    /* autoprefixer: ignore next */
+    @include animate(color transform, .3s, ease-in-out);
+
+    @include media("<desktop") {
+      font-size: 16px;
+    }
+
+    @include media("<tablet") {
+      font-size: 14px;
+    }
+
+    @include media("<phone") {
+      font-weight: 400;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 5px 0;
+  }
+
+  span.wpcf7-not-valid-tip {
+    color: $red !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    line-height: 1.2;
+    padding: 10px 0 0;
+
+    @include media("<desktop") {
+      font-size: 12px !important;
+    }
+
+    @include media("<phone") {
+      font-weight: 400 !important;
+    }
+  }
+
+  input[type="submit"] {
+    @include media("<phone") {
+      min-width: 200px;
+    }
+  }
+
+  .ajax-loader {
+    vertical-align: top !important;
+    margin: 0 0 0 10px !important;
+  }
+
+  div.wpcf7-validation-errors,
+  div.wpcf7-acceptance-missing {
+    display: none !important;
+  }
+
+  div.wpcf7-mail-sent-ok {
+    margin: 0 !important;
+    padding: 15px 0 0 !important;
+    border: none !important;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $green;
+
+    @include media("<desktop") {
+      font-size: 16px !important;
+      padding: 10px 0 0 !important;
+    }
+
+    @include media("<tablet") {
+      font-size: 14px !important;
+    }
+
+    @include media("<phone") {
+      font-weight: 400 !important;
+    }
+  }
+}

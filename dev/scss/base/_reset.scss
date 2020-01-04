@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+body {
+  font: $font-weight-base #{$font-size-base}/#{$line-height-base} $base-font-family;
+  min-width: $base-min-width;
+  color: $base-text-color;
+  background: $base-background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include media("<widescreen") {
+    font-size: 18px;
+  }
+
+  @include media("<desktop") {
+    font-size: 16px;
+  }
+
+  @include media("<tablet") {
+    font-size: 14px;
+  }
+
+  &.nav-active {
+    @include media("<tablet") {
+      overflow: hidden;
+    }
+  }
+
+  &.admin-bar {
+    margin-top: -32px;
+
+    @media screen and (max-width: 782px) {
+      margin-top: -46px;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+b, strong {
+  font-weight: 800;
+}

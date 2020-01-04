@@ -1,0 +1,71 @@
+/* logo styles */
+
+.logo {
+  width: 237px;
+
+  @include media("<desktop") {
+    width: 180px;
+  }
+
+  @include media("<tablet") {
+    width: 150px;
+  }
+
+  a {
+    padding: 37px 0;
+    display: block;
+
+    @include media("<desktop") {
+      padding: 32px 0;
+    }
+
+    @include media("<tablet") {
+      padding: 28px 0;
+    }
+
+    @include media("<phone") {
+      padding: 24px 0;
+    }
+  }
+
+  img {
+    display: block;
+  }
+}
+
+// .logo {
+//   font-size: 24px;
+//   line-height: 1;
+
+//   @include media("<desktop") {
+//     font-size: 22px;
+//   }
+
+//   @include media("<phone") {
+//     font-size: 20px;
+//   }
+
+//   > a {
+//     display: block;
+//     color: $black;
+//     padding: 38px 0;
+
+//     @include media("<desktop") {
+//       padding: 30px 0;
+//     }
+
+//     @include media("<tablet") {
+//       padding: 25px 0;
+//     }
+
+//     @include media("<phone") {
+//       padding: 20px 0;
+//     }
+//   }
+
+//   .logo-mark {
+//     font-weight: 800;
+//     color: $red;
+//     background: transparent;
+//   }
+// }

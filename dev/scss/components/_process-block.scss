@@ -1,0 +1,21 @@
+/* process block styles */
+
+.process-block {
+  @extend %listreset;
+  counter-reset: newCounter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+
+  @include media("<widescreen") {
+    margin: 0 -10px;
+  }
+
+  @include media("<desktop") {
+    margin: 0 -10px;
+  }
+
+  @include media("<phone") {
+    margin: 0;
+  }
+}

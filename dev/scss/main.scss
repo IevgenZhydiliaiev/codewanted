@@ -1,0 +1,47 @@
+/*
+  Theme Name: Base
+  Author: Anonymous
+  Author URI:
+  Version: 1
+  Description: Base theme for Wordpress
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Text Domain: base
+  Tags: one-column, two-columns
+  Theme URI:
+*/
+
+@import "vendors/include-media";
+@import "vendors/normalize";
+@import "vendors/icomoon";
+@import "vendors/slick-slider";
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/reset";
+@import 'base/cms-reset';
+@import "base/typography";
+@import "base/forms";
+@import 'base/wp-reset';
+@import "base/button";
+
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+@import "components/components";
+@import "components/logo";
+@import "components/nav";
+@import "components/proposale-block";
+@import "components/scroll-btn";
+@import "components/info-block";
+@import "components/services-block";
+@import "components/services-box";
+@import "components/process-block";
+@import "components/process-box";
+@import "components/reviews-slider";
+@import "components/contact-block";
+@import "components/contact-form";
+@import "components/back-to-top";

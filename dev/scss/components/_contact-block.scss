@@ -1,0 +1,27 @@
+/* contact block styles */
+
+.contact-block {
+  max-width: 890px;
+  padding: 65px;
+  border-radius: 5px;
+  background: $white;
+  box-shadow: 0 0 20px 1px rgba($black, .1);
+
+  @include media("<widescreen") {
+    padding: 50px;
+    max-width: 700px;
+  }
+
+  @include media("<desktop-lg") {
+    padding: 40px;
+  }
+
+  @include media("<desktop") {
+    padding: 30px;
+  }
+
+  @include media("<tablet") {
+    max-width: 728px;
+    padding: 20px;
+  }
+}

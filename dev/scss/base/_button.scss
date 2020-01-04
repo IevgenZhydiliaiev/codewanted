@@ -1,0 +1,35 @@
+/* button styles */
+
+.button {
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 230px;
+  color: $white;
+  border: $btn-border;
+  border-radius: $btn-border-radius;
+  background: $btn-background;
+  padding: $btn-padding;
+  outline: none;
+  @include animate(color background, .3s, ease-in-out);
+
+  @include media("<desktop") {
+    padding: 18px 10px 16px;
+  }
+
+  @include media("<phone") {
+    padding: 15px 10px 13px;
+    font-weight: 400;
+    border-width: 1px;
+  }
+
+  &:hover,
+  &:focus {
+    .no-touch-device & {
+      background: transparent;
+      color: $red;
+    }
+  }
+}
